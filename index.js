@@ -22,7 +22,7 @@ module.exports = function(user, cb){
   var u = user.split('@');
   if (u.length != 2) return cb('User should be username@pod.com');
   getXML('http://'+u[1]+'/.well-known/host-meta', function(err,host){
-    if (err) throw err;
+    if (err) return cb(err);
     getXML(host.XRD.Link[0].$.template.replace(/{uri}/g, encodeURIComponent(user)), function(err, card){
       var out ={};
       var keys = Object.keys(keyMap);
