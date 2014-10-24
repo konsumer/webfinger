@@ -1,0 +1,25 @@
+{
+  "name": "webfinger",
+  "version": "0.0.0",
+  "description": "webfinger protocol lib for diaspora",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/konsumer/webfinger.git"
+  },
+  "keywords": [
+    "webfinger",
+    "diaspora"
+  ],
+  "author": "David Konsumer <konsumer@jetboystudio.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/konsumer/webfinger/issues"
+  },
+  "homepage": "https://github.com/konsumer/webfinger",
+  "dependencies": {
+    "request": "^2.46.0",
+    "xml2js": "^0.4.4"
+  }
+}
